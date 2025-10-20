@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 960px) {
+  .content {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.94);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 12px 40px rgba(69, 123, 157, 0.18);
+  backdrop-filter: blur(6px);
+  min-height: 320px;
+}

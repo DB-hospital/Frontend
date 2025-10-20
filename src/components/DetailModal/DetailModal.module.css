@@ -1,0 +1,215 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 29, 54, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 3rem 1rem;
+  z-index: 1000;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: min(600px, 92vw);
+  width: 100%;
+  box-shadow: 0 30px 80px rgba(15, 32, 57, 0.35);
+  animation: modal-fade-in 0.25s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem 0;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: #1d3557;
+}
+
+.close {
+  border: none;
+  background: #f1f5ff;
+  color: #1d3557;
+  font-size: 1.2rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.close:hover {
+  background: #d7e3ff;
+  transform: rotate(90deg);
+}
+
+.body {
+  padding: 0 1.75rem 1.75rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: #1d3557;
+}
+
+.dl {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.dl div {
+  display: flex;
+  gap: 0.5rem;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+.dl dd {
+  margin: 0;
+  font-weight: 400;
+  color: #2f3d55;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.list li {
+  background: #f6f9ff;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e1ecff;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hospitalCard {
+  gap: 0.75rem;
+}
+
+.hospitalInfo {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hospitalInfo strong {
+  font-size: 1.05rem;
+}
+
+.reviewToggle {
+  justify-self: start;
+  border: none;
+  background: #1d3557;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.reviewToggle:hover {
+  background: #274368;
+  transform: translateY(-1px);
+}
+
+.reviewSection {
+  border-top: 1px solid #dce7ff;
+  padding-top: 0.75rem;
+}
+
+.reviewList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.reviewCard {
+  background: #ffffff;
+  border: 1px solid #e1ecff;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.reviewRating {
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.reviewContent {
+  margin: 0;
+  color: #2f3d55;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.list strong {
+  font-size: 1rem;
+  color: #1d3557;
+}
+
+.list p {
+  margin: 0;
+  color: #2f3d55;
+  font-size: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #1d3557;
+  color: #fff;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.status {
+  margin: 0;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+.error {
+  color: #e63946;
+}
+
+.subtle {
+  margin: 0;
+  color: #5f6f94;
+  font-size: 0.92rem;
+}
+
+@keyframes modal-fade-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
